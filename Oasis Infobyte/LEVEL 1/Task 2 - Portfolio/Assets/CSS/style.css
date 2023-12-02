@@ -1,0 +1,62 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Header */
+  header {
+    padding: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0;
+    color: black;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  #about {
+    background-color: #f4f4f4;
+    padding: 50px;
+  }
+  
+  /* Projects Section */
+  #projects {
+    padding: 50px 0;
+  }
+  
+  .card {
+    margin-bottom: 30px;
+  }
+  
+  .card-img-top {
+    max-width: 100%;
+  }
+  
+  /* Contact Section */
+  #contact {
+    background-color: #f9f9f9;
+    padding: 50px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  

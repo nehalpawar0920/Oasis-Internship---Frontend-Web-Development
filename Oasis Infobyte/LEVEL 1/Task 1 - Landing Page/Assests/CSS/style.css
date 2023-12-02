@@ -1,0 +1,139 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Top Navigation */
+  .top-nav {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+  }
+  
+  .head {
+    display: flex;
+    align-items: center;
+  }
+  
+  .head h1 {
+    margin-left: 10px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Main Intro Section */
+  .main-into {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .inroimg img {
+    border-radius: 50%;
+  }
+  
+  .main {
+    margin-left: 50px;
+  }
+  
+  .main h3 {
+    margin-bottom: 10px;
+  }
+  
+  .main p {
+    margin-bottom: 20px;
+  }
+  
+  .main button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Services Section */
+  .Services {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .Services table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Services th, .Services td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .Services th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .Services tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Contact Info Section */
+  .contact-info {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .contact-info li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer h4 {
+    margin: 0;
+  }
+  
+  .follow {
+    display: flex;
+  }
+  
+  .follow img {
+    margin-left: 10px;
+  }
+
+  .contact-info{
+    font-size: large;
+    align-content: normal;
+  }

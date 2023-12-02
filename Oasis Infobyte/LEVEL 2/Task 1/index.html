@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .calculator {
+      width: 300px;
+      margin: 0 auto;
+      background-color: #f4f4f4;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .calculator h2 {
+      text-align: center;
+    }
+    
+    .calculator input[type="text"] {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      font-size: 18px;
+      text-align: right;
+    }
+    
+    .calculator .row {
+      display: flex;
+    }
+    
+    .calculator .row .button {
+      flex: 1;
+      margin: 5px;
+    }
+    
+    .calculator .row .button:nth-child(4),
+    .calculator .row .button:nth-child(8),
+    .calculator .row .button:nth-child(12),
+    .calculator .row .button:nth-child(16) {
+      background-color: #f9a825;
+      color: #fff;
+    }
+    
+    .calculator .row .button:nth-child(4):hover,
+    .calculator .row .button:nth-child(8):hover,
+    .calculator .row .button:nth-child(12):hover,
+    .calculator .row .button:nth-child(16):hover {
+      background-color: #f57f17;
+    }
+    
+    .calculator .row .button:nth-child(16) {
+      flex-basis: 50%;
+    }
+    
+    .calculator .row .button:nth-child(16):hover {
+      background-color: #d84315;
+    }
+    
+    .calculator .row .button:nth-child(17) {
+      background-color: #4caf50;
+      color: #fff;
+      font-weight: bold;
+    }
+    
+    .calculator .row .button:nth-child(17):hover {
+      background-color: #388e3c;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="calculator">
+    <h2>Calculator</h2>
+    <input type="text" id="result" disabled>
+    <div class="row">
+      <input type="button" class="button" value="7" onclick="appendValue(7)">
+      <input type="button" class="button" value="8" onclick="appendValue(8)">
+      <input type="button" class="button" value="9" onclick="appendValue(9)">
+      <input type="button" class="button" value="/" onclick="appendValue('/')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="4" onclick="appendValue(4)">
+      <input type="button" class="button" value="5" onclick="appendValue(5)">
+      <input type="button" class="button" value="6" onclick="appendValue(6)">
+      <input type="button" class="button" value="*" onclick="appendValue('*')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="1" onclick="appendValue(1)">
+      <input type="button" class="button" value="2" onclick="appendValue(2)">
+      <input type="button" class="button" value="3" onclick="appendValue(3)">
+      <input type="button" class="button" value="-" onclick="appendValue('-')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="0" onclick="appendValue(0)">
+      <input type="button" class="button" value="." onclick="appendValue('.')">
+      <input type="button" class="button" value="=" onclick="calculate()">
+      <input type="button" class="button" value="+" onclick="appendValue('+')">
+    </div>
+    <div class="row">
+      <input type="button" class="button" value="Clear" onclick="clearResult()">
+      <input type="button" class="button" value="Delete" onclick="deleteLastChar()">
+    </div>
+  </div>
+
+  <script>
+    function appendValue(value) {
+      document.getElementById('result').value += value;
+    }
+
+    function calculate() {
+      let result = document.getElementById('result').value;
+      let answer = eval(result);
+      document.getElementById('result').value = answer;
+    }
+
+    function clearResult() {
+      document.getElementById('result').value = '';
+    }
+
+    function deleteLastChar() {
+      let result = document.getElementById('result').value;
+      document.getElementById('result').value = result.slice(0, -1);
+    }
+  </script>
+</body>
+
+</html>

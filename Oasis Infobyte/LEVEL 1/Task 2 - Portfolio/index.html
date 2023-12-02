@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">PORTFOLIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero" class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Hi All, I am Adam Smith</h1>
+      <p class="lead">Web Developer | Programmer | Cyber Security Analyst</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Name: Adam Smith</p>
+      <p>Education: Pursuing B.Tech in Information Technology</p>
+      <p>Hobbies: Playing Cricket, Travelling, Internet Surfing</p>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="./Assets/Images/projectnew1.jpg" class="card-img-top" alt="Project 1" width="150" height="150">
+            <div class="card-body">
+              <h3 class="card-title">GUI based Encryption & Decryption using Cipher Techniques</h3>
+              <p class="card-text">This is a python build GUI based project which enabels us to encrypt the message from sender and decrypt it at the receiver end using public key.</p>
+              <p class="card-text">It uses 3 cipher techniques to encode and decode the message. This can be used for safe messaging or transferring data.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="./project-planning-header@2x.png  " class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h3 class="card-title">Project 2</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" class="form-control" name="message" required></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn btn-primary">
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
